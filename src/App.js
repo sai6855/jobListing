@@ -4,6 +4,7 @@ import Jobs from "./Jobs/Jobs";
 import Applicants from "./Applicants/Applicants";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
+import ViewJobs from "./ViewJobs/ViewJobs";
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <Switch>
        <Route exact path='/jobs' component={Jobs} ></Route>
        <Route exact path='/applicants' component={Applicants} ></Route>
+       <Route exact path='/view-jobs' component={ViewJobs} ></Route>
        </Switch>
         </BrowserRouter>
       </div>

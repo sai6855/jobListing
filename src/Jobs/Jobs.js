@@ -9,21 +9,23 @@ const Jobs = () => {
     description: "",
     technologies: [],
     id: "",
+    noOfAppliedCandidates:[],
+    noOfEligibleCandidates:[]
   });
   const { name, description, technologies } = jobData;
 
   const technologiesData = [
-    { value: "HTML", label: "HTML" },
-    { value: "CSS", label: "CSS" },
-    { value: "React", label: "React" },
-    { value: "Angular", label: "Angular" },
-    { value: "Vue", label: "Vue" },
-    { value: "Redux", label: "Redux" },
-    { value: "Express", label: "Express" },
-    { value: "Mongodb", label: "Mongodb" },
-    { value: "SQL", label: "SQL" },
-    { value: "Django", label: "Django" },
-    { value: "Node", label: "Node" },
+    { value: "HTML", label: "HTML " },
+    { value: "CSS", label: "CSS " },
+    { value: "React", label: "React " },
+    { value: "Angular", label: "Angular " },
+    { value: "Vue", label: "Vue " },
+    { value: "Redux", label: "Redux " },
+    { value: "Express", label: "Express " },
+    { value: "Mongodb", label: "Mongodb " },
+    { value: "SQL", label: "SQL " },
+    { value: "Django", label: "Django " },
+    { value: "Node", label: "Node " },
     ,
   ];
 
@@ -41,8 +43,14 @@ const Jobs = () => {
     jobData.id = uuidv4();
     const newJobs = [...previousJobs, jobData];
     localStorage.setItem("JobsData", JSON.stringify(newJobs));
-    console.log(JSON.parse(localStorage.getItem("JobsData")));
-
+    setJobData({
+      name: "",
+    description: "",
+    technologies: [],
+    id: "",
+    noOfAppliedCandidates:[],
+    noOfEligibleCandidates:[]
+    })
     
   };
 
@@ -67,7 +75,7 @@ const Jobs = () => {
           name="description"
           value={description}
           onChange={handleNameAndDesc}
-          required
+          
         ></textarea>
         <Select
           required
