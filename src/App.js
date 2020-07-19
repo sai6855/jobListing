@@ -5,6 +5,7 @@ import Applicants from "./Applicants/Applicants";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
 import ViewJobs from "./ViewJobs/ViewJobs";
+import EligibleCandidates from "./EligibleCandidates/EligibleCandidates";
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
        <Route exact path='/jobs' component={Jobs} ></Route>
        <Route exact path='/applicants' component={Applicants} ></Route>
        <Route exact path='/view-jobs' component={ViewJobs} ></Route>
+       <Route exact path='/eligible-candidates' component={EligibleCandidates} ></Route>
        </Switch>
         </BrowserRouter>
       </div>

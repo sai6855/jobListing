@@ -1,0 +1,20 @@
+.eligible-candidates{
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+.candidate-details{
+    width: 500px;
+    height: 220px;
+    border: 2px solid #17a2b8;
+    -webkit-box-shadow: 4px 7px 13px 3px #acb0b1;
+    box-shadow: 4px 7px 13px 3px #acb0b1;
+    margin-bottom: 25px;
+}
+.detail{
+    margin: 20px;
+}
+
+.matched{
+    margin-top: 17.5px;
+}

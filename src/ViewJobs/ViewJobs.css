@@ -3,6 +3,11 @@
   margin-left: 100px;
 }
 
+.view-jobs a{
+  text-decoration: none;
+  color: black;
+}
+
 h1{
     color: #17a2b8;
 }
@@ -19,3 +24,5 @@ h1{
 .job-detail {
   margin: 15px;
 }
+
+

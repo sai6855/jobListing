@@ -13,6 +13,9 @@ const Navbar = () => {
                 <Link to='/applicants'>
                 <li>Applicant Form</li>
                 </Link>
+                <Link to='/view-jobs'>
+                <li>View Jobs</li>
+                </Link>
             </ul>
         </div>
     )
