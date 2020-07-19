@@ -37,7 +37,7 @@ const Applicants = () => {
     { value: "SQL", label: "SQL " },
     { value: "Django", label: "Django " },
     { value: "Node", label: "Node " },
-    ,
+    
   ];
 
   useEffect(() => {
@@ -65,25 +65,24 @@ const Applicants = () => {
         }
       });
 
-      let isEligible = false
+      let isEligible = false;
 
-      applicantData.technologies.forEach(applicantTechnology=>{
-         
-
-        jobsData.forEach(job=>{
-          job.technologies.forEach(jobTechnology=>{
-            console.log(jobTechnology);
-            if(applicantTechnology.value===jobTechnology.value && isEligible===false){
-              job.noOfEligibleCandidates.push(applicantData)
-              isEligible=true
+      applicantData.technologies.forEach((applicantTechnology) => {
+        jobsData.forEach((job) => {
+          job.technologies.forEach((jobTechnology) => {
+            
+            if (
+              applicantTechnology.value === jobTechnology.value &&
+              isEligible === false &&job.id===applicantData.id
+            ) {
+              console.log(jobTechnology.value===applicantTechnology.value);
+           
+              job.noOfEligibleCandidates.push(applicantData);
+              isEligible = true;
             }
-          })
-          
-        })
-      })
-
-      
-
+          });
+        });
+      });
 
       localStorage.setItem("JobsData", JSON.stringify(jobsData));
 

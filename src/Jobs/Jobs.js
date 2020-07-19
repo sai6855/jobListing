@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Jobs.css";
 import Select from "react-select";
 import { v4 as uuidv4 } from "uuid";
@@ -26,7 +26,7 @@ const Jobs = () => {
     { value: "SQL", label: "SQL " },
     { value: "Django", label: "Django " },
     { value: "Node", label: "Node " },
-    ,
+    
   ];
 
   const handleChange = (options) =>

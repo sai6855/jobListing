@@ -16,6 +16,9 @@ const Navbar = () => {
                 <Link to='/view-jobs'>
                 <li>View Jobs</li>
                 </Link>
+                <Link to='/search-applicants'>
+                <li>Search Applicants</li>
+                </Link>
             </ul>
         </div>
     )

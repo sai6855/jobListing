@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 
 const ViewJobs = () => {
   const [availableJobs, setAvailableJobs] = useState([]);
-  const [allApplicants, setAllApplicants] = useState([]);
-
+  
   useEffect(() => {
     setAvailableJobs(JSON.parse(localStorage.getItem("JobsData")));
   });
@@ -15,7 +14,7 @@ const ViewJobs = () => {
         <h1>No Jobs Available...</h1>
       ) : (
         <Fragment>
-          <h1>Jobs Available</h1>
+          <h1>Jobs </h1>
           {availableJobs.map((job) => {
             return (
               <div key={job.id} className="job-item">
