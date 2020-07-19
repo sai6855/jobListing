@@ -110,7 +110,7 @@ const Applicants = () => {
   };
   return (
     <div className="form-data">
-      {jobsData.length === 0 ? (
+      { jobsData.length === 0 ? (
         <h2>No Jobs Available</h2>
       ) : (
         <Fragment>

@@ -82,7 +82,7 @@ const SearchApplicants = () => {
 
   return (
     <div className="search-applicants">
-      {applicantsData === undefined || applicantsData.length === 0 ? (
+      {applicantsData === null || applicantsData.length === 0 ? (
         <h1>No Applicants Available</h1>
       ) : (
         <Fragment>

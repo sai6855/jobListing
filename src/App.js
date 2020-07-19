@@ -7,6 +7,7 @@ import Navbar from "./Navbar/Navbar";
 import ViewJobs from "./ViewJobs/ViewJobs";
 import EligibleCandidates from "./EligibleCandidates/EligibleCandidates";
 import SearchApplicants from "./SearchJobs/SearchApplicants";
+import Home from "./Home/Home";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <BrowserRouter>
         <Navbar/>
         <Switch>
+          <Route exact path='/' component={Home}></Route>
        <Route exact path='/jobs' component={Jobs} ></Route>
        <Route exact path='/applicants' component={Applicants} ></Route>
        <Route exact path='/view-jobs' component={ViewJobs} ></Route>
@@ -22,6 +24,9 @@ class App extends Component {
        <Route exact path='/search-applicants' component={SearchApplicants} ></Route>
        </Switch>
         </BrowserRouter>
+
+        
+
       </div>
     );
   }
